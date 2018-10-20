@@ -17,8 +17,8 @@
     		<th></th>
       </tr>  
       <tr>
-	<td><a href="img/pulseras/Pulsera01.jpg"<img src="img/pulseras/Pulsera01.jpg"  width="400"/>></a></td>
-        <td><a href="img/pulseras/Pulsera02.jpg"<img src="img/pulseras/Pulsera02.jpg"  width="400"/>></a></td>
+	<td><a href="img/pulseras/Pulsera01.jpg"><img src="img/pulseras/Pulsera01.jpg"  width="400"/></a></td>
+        <td><a href="img/pulseras/Pulsera02.jpg"><img src="img/pulseras/Pulsera02.jpg"  width="400"/></a></td>
       </tr>  
 </table>
 </div>
