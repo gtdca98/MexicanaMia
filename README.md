@@ -1,8 +1,7 @@
 # Mexicanamia.com
 
-![](img/picini.png)
 
-![](Contextos_muertos2018.gif)
+![](img/Contextos_muertos2018.gif)
 
 
 
