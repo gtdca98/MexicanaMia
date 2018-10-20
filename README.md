@@ -1,5 +1,10 @@
-Mexicanamia.com
+# Mexicanamia.com
 
-Este proyecto esta en construcción esperamos contar con tu visita próximamente
+![img/picini.png]
 
-.... Octubre 20 2018 ....
+
+## Este proyecto esta en construcción esperamos contar con tu visita próximamente...
+
+
+
+### .... Octubre 20 2018 ....
