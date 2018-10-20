@@ -15,10 +15,10 @@
     		<th></th>
 			</tr>  
       <tr>
-	      <td><img src="img/pulseras/Pulsera01.jpg"  width="200"/></td>
-        <td><img src="img/pulseras/Pulsera02.jpg"  width="200"/></td>
-        <td><img src="img/pulseras/Pulsera03.jpg"  width="200"/></td>
-			</tr>  
+	<td><img src="img/pulseras/Pulsera01.jpg"  width="300"/></td>
+        <td><img src="img/pulseras/Pulsera02.jpg"  width="300"/></td>
+        <td><img src="img/pulseras/Pulsera03.jpg"  width="300"/></td>
+      </tr>  
 </table>
 </div>
 
