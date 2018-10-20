@@ -57,4 +57,6 @@
 </div>
 
 
+[ ![](img/picini.png =250x) ](img/picini.png)
+
 ### .... Octubre 20 2018 ....
