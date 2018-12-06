@@ -130,29 +130,44 @@ var paisajes = [
 "IMG_7826c.png"]; //28
 
 
-function generaECAP(){
-
-
-
-
-var linea01 = '<hr> <div class = "row"><div class="col-sm-6 col-md-6 col-xl-6 mb-6"><img src="img2018/paisaje/' 
-var linea02 = '"  class="cover"><span class= "cop">&copy;ENRIQUE RIVERA</span></div><div class="col-sm-6 col-md-6 col-xl-6 mb-6"><div class = "row"><div class="col-sm-9 col-md-9 col-xl-9 mb-9"><a href="img2018/c/'
-var linea03 = '"><img src="img2018/c/'  //width="100%"
-var linea04 ='" width= "100%" class= "imag"></a></div><div class="col-sm-3 col-md-3 col-xl-3 mb-3"><a href="img2018/a/'
-var linea05 = '"><img src="img2018/a/'
-var linea06 = '" width= "100%"   class= "imag"/></a><br><br><a href="img2018/p/'
-var linea07 = '"><img src="img2018/p/'
-var linea08 = '" width= "100%"   class= "imag"/></a></div></div><div class = "row"><h5></h5></div></div></div>'
-
-var lineas ="<br>"
-
-
-for (var rr = 0; rr < 28; rr ++){
-	var consec= rr +1
-	lineas = lineas + "<hr><p>"+consec+"</p>"+linea01 +  paisajes[rr] +linea02 + collares[rr] + linea03 + collares[rr] + linea04 + aretes[rr] +linea05 + aretes[rr] + linea06 + pulseras[rr] + linea07 + pulseras[rr] + linea08
+function isEven(n) {
+   return n % 2 == 0;
 }
 
+function generaECAP(){
 
-$('#contenido').append(lineas);
+	var linea01a = '<hr> <div class = "row">'+'<div class="col-sm-6 col-md-6 col-xl-6 mb-6"><div class = "row"><div class="col-sm-9 col-md-9 col-xl-9 mb-9"><a href="img2018/c/'
+	var linea02a = '"><img src="img2018/c/'  //width="100%"
+	var linea03a ='" width= "100%" class= "imag"></a></div><div class="col-sm-3 col-md-3 col-xl-3 mb-3"><a href="img2018/a/'
+	var linea04a = '"><img src="img2018/a/'
+	var linea05a = '" width= "100%"   class= "imag"/></a><br><br><a href="img2018/p/'
+	var linea06a = '"><img src="img2018/p/'
+	var linea07a = '" width= "100%"   class= "imag"/></a></div></div><div class = "row"><h5></h5></div></div>'+'<div class="col-sm-6 col-md-6 col-xl-6 mb-6"><img src="img2018/paisaje/' 
+	var linea08a = '"  class="cover"><span class= "cop">&copy;ENRIQUE RIVERA</span></div></div>'
+
+	var linea01 = '<hr> <div class = "row"><div class="col-sm-6 col-md-6 col-xl-6 mb-6"><img src="img2018/paisaje/' 
+	var linea02 = '"  class="cover"><span class= "cop">&copy;ENRIQUE RIVERA</span></div><div class="col-sm-6 col-md-6 col-xl-6 mb-6"><div class = "row"><div class="col-sm-9 col-md-9 col-xl-9 mb-9"><a href="img2018/c/'
+	var linea03 = '"><img src="img2018/c/'  //width="100%"
+	var linea04 ='" width= "100%" class= "imag"></a></div><div class="col-sm-3 col-md-3 col-xl-3 mb-3"><a href="img2018/a/'
+	var linea05 = '"><img src="img2018/a/'
+	var linea06 = '" width= "100%"   class= "imag"/></a><br><br><a href="img2018/p/'
+	var linea07 = '"><img src="img2018/p/'
+	var linea08 = '" width= "100%"   class= "imag"/></a></div></div><div class = "row"><h5></h5></div></div></div>'
+
+	var lineas ="<br>"
+
+
+	for (var rr = 0; rr < 28; rr ++){
+		var consec= rr +1
+		if(isEven(rr)){
+			lineas = lineas + "<hr><p>"+consec+"</p>"+linea01a +  collares[rr] +linea02a + collares[rr] + linea03a + aretes[rr] + linea04a + aretes[rr] +linea05a + pulseras[rr] + linea06a + pulseras[rr] + linea07a + paisajes[rr] + linea08a	
+		}else{
+			lineas = lineas + "<hr><p>"+consec+"</p>"+linea01 +  paisajes[rr] +linea02 + collares[rr] + linea03 + collares[rr] + linea04 + aretes[rr] +linea05 + aretes[rr] + linea06 + pulseras[rr] + linea07 + pulseras[rr] + linea08	
+		};
+
+	};
+
+
+	$('#contenido').append(lineas);
 
 };
