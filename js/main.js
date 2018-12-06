@@ -171,3 +171,9 @@ function generaECAP(){
 	$('#contenido').append(lineas);
 
 };
+
+
+$('.carousel').carousel({
+  interval: 1500
+})
+
