@@ -1,3 +1,4 @@
+var modosIMG=0;
 var aretes = [
 "TX011As35_89.jpg",
 "TX001As04_89.jpg",
