@@ -174,6 +174,76 @@ function generaECAP(){
 
 
 $('.carousel').carousel({
-  interval: 1500
+  interval: 1800	
 })
+
+
+
+setInterval(function(){ asignaimagen(); }, 15000);
+
+
+
+function asignaimagen(){
+	modosIMG= modosIMG +1
+	if(modosIMG>4){modosIMG =1 }
+		
+	var ruta_pj= 'img2018/paisaje/'
+	var ruta_a= 'img2018/a/'
+	var ruta_c= 'img2018/c/'
+	var ruta_p= 'img2018/p/'
+
+	$("#i1a").attr("src", ruta_pj+paisajes[0]);
+	$("#i2a").attr("src", ruta_pj+paisajes[7]);
+	$("#i3a").attr("src", ruta_pj+paisajes[19]);
+	$("#i4a").attr("src", ruta_pj+paisajes[3]);
+	$("#i5a").attr("src", ruta_pj+paisajes[27]);
+	$("#i6a").attr("src", ruta_pj+paisajes[17]);
+	$("#i7a").attr("src", ruta_pj+paisajes[18]);
+	$("#i8a").attr("src", ruta_pj+paisajes[20]);
+
+	if(modosIMG==1){
+		$("#i1b").attr("src", ruta_c+collares[0]);
+		$("#i2b").attr("src", ruta_a+aretes[7]);
+		$("#i3b").attr("src", ruta_p+pulseras[19]);
+		$("#i4b").attr("src", ruta_a+aretes[3]);
+		$("#i5b").attr("src", ruta_p+pulseras[27]);
+		$("#i6b").attr("src", ruta_c+collares[17]);
+		$("#i7b").attr("src", ruta_a+aretes[18]);
+		$("#i8b").attr("src", ruta_c+collares[20]);
+	};
+	if(modosIMG==2){	
+		$("#i1b").attr("src", ruta_a+aretes[0]);
+		$("#i2b").attr("src", ruta_p+pulseras[7]);
+		$("#i3b").attr("src", ruta_c+collares[19]);
+		$("#i4b").attr("src", ruta_p+pulseras[3]);
+		$("#i5b").attr("src", ruta_c+collares[27]);
+		$("#i6b").attr("src", ruta_a+aretes[17]);
+		$("#i7b").attr("src", ruta_p+pulseras[18]);
+		$("#i8b").attr("src", ruta_a+aretes[20]);
+	};
+	if(modosIMG==3){	
+		$("#i1b").attr("src", ruta_p+pulseras[0]);
+		$("#i2b").attr("src", ruta_c+collares[7]);
+		$("#i3b").attr("src", ruta_a+aretes[19]);
+		$("#i4b").attr("src", ruta_c+collares[3]);
+		$("#i5b").attr("src", ruta_a+aretes[27]);
+		$("#i6b").attr("src", ruta_p+pulseras[17]);
+		$("#i7b").attr("src", ruta_c+collares[18]);
+		$("#i8b").attr("src", ruta_p+pulseras[20]);
+	};
+	if(modosIMG==4){	
+		$("#i1b").attr("src", ruta_pj+paisajes[16]);
+		$("#i2b").attr("src", 'img2018/logo.png');
+		$("#i3b").attr("src", ruta_pj+paisajes[2]);
+		$("#i4b").attr("src", ruta_pj+paisajes[5]);
+		$("#i5b").attr("src", 'img2018/logo.png');
+		$("#i6b").attr("src", ruta_pj+paisajes[9]);
+		$("#i7b").attr("src", ruta_pj+paisajes[14]);
+		$("#i8b").attr("src", 'img2018/logo.png');
+	};
+
+
+
+}
+
 
