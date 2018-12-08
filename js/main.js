@@ -1,4 +1,6 @@
 var modosIMG=0;
+var radiousPerc=0;
+var reversa= false;
 var aretes = [
 "TX011As35_89.jpg",
 "TX001As04_89.jpg",
@@ -242,9 +244,30 @@ function asignaimagen(){
 		$("#i7b").attr("src", ruta_pj+paisajes[14]);
 		$("#i8b").attr("src", 'img2018/logo.png');
 	};
-
-
-
 }
+
+setInterval(function(){ redondea(); }, 100);
+
+function redondea(){
+	var increm = 1
+	if(reversa==true){increm= -1 }
+	if(reversa==false){increm= 1 }	
+	radiousPerc= radiousPerc +increm
+	if(radiousPerc>150){
+		reversa=true;
+		radiousPerc =50;
+		
+
+	}
+	if(radiousPerc<-100){
+		radiousPerc =0;
+		reversa=false;
+
+		 }
+
+
+		$("#multiCubos img").css('border-radius', radiousPerc +'%');
+}
+
 
 
