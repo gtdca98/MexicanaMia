@@ -19,6 +19,12 @@ body {
     background-color: white;
 }
 
+#multiCubos img{
+width: 22vw;
+height: 22vw;
+}
+
+
 .fill {
   object-fit: fill;
 }
@@ -30,8 +36,10 @@ body {
 .cover {
   object-fit: cover;
   object-position: 100% 50;
-  height: 300pt;
+  height: 100%;
   width: inherit;
+  max-height: 400px;
+  min-height: 240px;
 }
 
 .none {
@@ -62,7 +70,7 @@ body {
 	margin: auto;
 	}
  .imag:hover{
-		width: 103%;
+		border: solid 2px #cccccc;
 
 
 } 
@@ -124,6 +132,12 @@ footer  a {
 
 .google {
   background: #dd4b39;
+  color: white;
+  display:inline-block;margin-right:10px;
+}
+
+.whatsapp{
+  background: #429942;
   color: white;
   display:inline-block;margin-right:10px;
 }
@@ -196,11 +210,17 @@ footer  a {
 		#cf1,#cf2,#cf3,#cf4,
 		#cf5,#cf6,#cf7,#cf8 {
 		  position:relative;
-		  height:266px;
-		  width:100%;
+		  /*height:266px;
+		  width:100%;*/
 		  margin:0 ;
 		  padding: 0pt;
+		  height: 22vw;
+		  width: 22vw;
 		}
+
+
+
+
 
 		#cf1 img,#cf2 img,#cf3 img,#cf4 img,
 		#cf5 img,#cf6 img,#cf7 img,#cf8 img {
@@ -247,7 +267,7 @@ footer  a {
 		}
 
 
-		#cf1 img.top,#cf8 img.top{
+		#cf1 img.top, #cf8 img.top{
 		animation-name: cf1FadeInOut;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
@@ -255,7 +275,7 @@ footer  a {
 		animation-direction: alternate;
 		}
 
-		#cf2 img.top,#cf7 img.top{
+		#cf2 img.top, #cf7 img.top{
 		animation-name: cf2FadeInOut;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
@@ -263,7 +283,7 @@ footer  a {
 		animation-direction: alternate;
 		}
 
-		#cf3 img.top,#cf6 img.top{
+		#cf3 img.top, #cf6 img.top{
 		animation-name: cf3FadeInOut;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
@@ -272,7 +292,7 @@ footer  a {
 		}
 
 
-		#cf4 img.top,#cf5 img.top{
+		#cf4 img.top, #cf5 img.top{
 		animation-name: cf3FadeInOut;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
@@ -289,12 +309,84 @@ footer  a {
 		width: inherit;	
 		}
 
+
 		.cellSize {
 			padding: 0pt;
 			margin: 0pt !important;
 		}
 	
+	.preciomv {
+		position: relative; 
+	}
 	
+   .padbt{
+	   	padding: 5px;
+	   	width : 15vmax;
+
+   }
+
+   .padup{
+	   	margin-top: 0px;
+   }
+
+
+
+@media screen and (max-width: 768px) {
+
+   .padup{
+	   	margin-top: 15px;
+   }
+
+}
+
+@media screen and (max-width: 575px) {
+	
+
+	.preciomv {
+		position: absolute; 
+		right:10%; 
+		top:10%;
+	}
+
+   .padbt{
+   		width : 20vmax;
+   		padding: 0px;
+
+   }
+
+footer {
+    height: 650px;
+    background-color: #220000;
+    width: 100vw;
+    margin-left: calc(-50vw + 50% );
+    position: relative;
+    color: #EDE7EC;
+    font-size: 0.8em;
+}
+
+ 
+}
+
+  .videoinv{
+   	background-color: #222222;
+   	height: 100%;
+   	margin: 0px;
+   	padding: 0px
+ 
+   }
+
+	.videoinv p {
+		color: #fefefe;
+	}
+
+   .pcent{
+   	font-size: 1.1em;
+   	text-align: center;
+   	line-height: 2.2em;
+   	margin: 0px;
+  	
+   }
+
 </style>
 </head>
 <body >	
@@ -367,64 +459,66 @@ footer  a {
 		
 	<br>
 
-	
+
+
+
 <div id="multiCubos">
-	<div class="row rowSize">
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >
-			<div id="cf1">
-				<img id="i1a" src="" alt="" class="bottom imgSize">
-				<img  id="i1b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >
-			<div id="cf2">
-				<img  id="i2a" src="" alt="" class="bottom imgSize">
-				<img  id="i2b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >
-			<div id="cf3">
-				<img  id="i3a" src="" alt="" class="bottom imgSize">
-				<img  id="i3b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >	
-			<div id="cf4">	
-				<img  id="i4a" src="" alt="" class="bottom imgSize">
-				<img  id="i4b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
-	</div>
-	
-	<div class="row rowSize">
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >
-			<div id="cf5">
-				<img id="i5a" src="" alt="" class="bottom imgSize">
-				<img id="i5b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >
-			<div id="cf6">
-				<img id="i6a" src="" alt="" class="bottom imgSize">
-				<img id="i6b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >
-			<div id="cf7">
-				<img id="i7a" src="" alt="" class="bottom imgSize">
-				<img id="i7b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-xl-3 mb-3 cellSize" >	
-			<div id="cf8">	
-				<img id="i8a" src="" alt="" class="bottom imgSize">
-				<img id="i8b" src="" alt="" class="top imgSize">
-			</div>
-		</div>
+	<table>
+		<tr>
+			<td class="cellSize">
+				<div id="cf1">
+	                <img id="i1a" src="" alt="" class="bottom imgSize">
+					<img  id="i1b" src="" alt="" class="top imgSize">
+				</div>
+			</td>
+			<td class="cellSize">
+				<div id="cf2">
+	                <img id="i2a" src="" alt="" class="bottom imgSize">
+					<img  id="i2b" src="" alt="" class="top imgSize">
+				</div>
+			</td>
+			<td class="cellSize">
+				<div id="cf3">
+	                <img id="i3a" src="" alt="" class="bottom imgSize">
+					<img  id="i3b" src="" alt="" class="top imgSize">
+				</div>
+			</td>
+			<td class="cellSize">
+				<div id="cf4">
+	                <img id="i4a" src="" alt="" class="bottom imgSize">
+					<img  id="i4b" src="" alt="" class="top imgSize">
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td class="cellSize">
+				<div id="cf5">
+	                <img id="i15" src="" alt="" class="bottom imgSize">
+					<img  id="i5b" src="" alt="" class="top imgSize">
+				</div>
+			</td>
+			<td class="cellSize">
+				<div id="cf6">
+	                <img id="i6a" src="" alt="" class="bottom imgSize">
+					<img  id="i6b" src="" alt="" class="top imgSize">
+				</div>
+			</td>
+			<td class="cellSize">
+				<div id="cf7">
+	                <img id="i7a" src="" alt="" class="bottom imgSize">
+					<img  id="i7b" src="" alt="" class="top imgSize">
+				</div>
+			</td>
+			<td class="cellSize">
+				<div id="cf8">
+	                <img id="i8a" src="" alt="" class="bottom imgSize">
+					<img  id="i8b" src="" alt="" class="top imgSize">
+				</div>				
+			</td>
+		</tr>
 
-	</div>
+	</table>
 </div>
-
 
 	<hr>
 	<div class = "row">
@@ -438,6 +532,9 @@ footer  a {
 	</div>
 	<hr>
 		
+
+
+
 		
 
 <div id="contenido"></div>
@@ -459,19 +556,27 @@ footer  a {
 <hr>   
 
 
+
+
+
 <footer>
   <div class= "transp">
     <p>Contáctanos:</p>
 	<div class="divcon">
-		  <a href="https://www.facebook.com/MexicaMia/" class="facebook"><i class="fa fa-facebook"></i> </a> 
+		  <a href="https://www.facebook.com/MexicaMia/" class="facebook"><i class="fa fa-facebook fa-2x"></i> </a> 
 		  <p class = "txtcon" >https://www.facebook.com/MexicaMia/</p>
 	</div>
 	<div  class="divcon">
-		  <a href="mailto:mexicamia@gmail.com" class="google"><i class="fa fa-google"></i></a> 
+		  <a href="mailto:mexicamia@gmail.com" class="google"><i class="fa fa-google fa-2x"></i></a> 
 		  <p class = "txtcon">mexicamia@gmail.com</p>
     </div>
     <div  class="divcon">
-		  <a href="https://www.instagram.com/mexicanamiamx/" class="instagram"><i class="fa fa-instagram"></i></a>
+		  <a href="" class="whatsapp"><i class="fa fa-whatsapp fa-2x"></i></a>
+		  <p class = "txtcon">5517585191</p>		
+	</div>  	
+
+    <div  class="divcon">
+		  <a href="https://www.instagram.com/mexicanamiamx/" class="instagram"><i class="fa fa-instagram fa-2x"></i></a>
 		  <p class = "txtcon">https://www.instagram.com/mexicanamiamx/</p>		
 	</div>  	
     <hr>	 
@@ -479,7 +584,7 @@ footer  a {
     <p>El contenido fotográfico de los paisajes en Catálogo Otoño-Invierno es propiedad de &copy;ENRIQUE RIVERA. </p>
     <p>El diseño e imágenes de la joyería atemporal en el Catálogo Otoño-Invierno fue producido por &copy;GABRIEL DEL CAMPO. </p>
     © 2018, Mexicana Mía
-    <p>Pagina: Version 5 diciembre 2018</p>
+    <p>Pagina: Versión: 14 enero 2019</p>
   </div>
 </footer>
 		
