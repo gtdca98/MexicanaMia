@@ -132,6 +132,37 @@ var paisajes = [
 "IMG_7200.JPG", //27
 "IMG_7826c.png"]; //28
 
+var precio = [
+// precio modelo en img y sobre
+540, //01 sobre 07
+400, //02 sobre 20
+595, //03 sobre 21
+460, //04 sobre 29
+460, //05 sobre 28
+450, //06 sobre 27
+430, //07 sobre 26
+515, //08
+435, //09 sobre 10
+440, //10
+440, //11
+440, //12
+420, //13
+525, //14
+395, //15 sobre 25
+390, //16 sobre 04
+500, //17 sobre 01
+590, //18 sobre 10
+460, //19 sobre 18
+400, //20 sobre 09
+460, //21 sobre 12
+425, //22 sobre 13
+500, //23 sobre 14
+500, //24 sobre 08
+500, //25 sobre 36
+345, //25 sobre 02
+475, //27
+430 //28 sobre 03
+]
 
 function isEven(n) {
    return n % 2 == 0;
@@ -139,15 +170,19 @@ function isEven(n) {
 
 function generaECAP(){
 
-	var linea01a = '<hr> <div class = "row">'+'<div class="col-sm-6 col-md-6 col-xl-6 mb-6"><div class = "row"><div class="col-sm-9 col-md-9 col-xl-9 mb-9"><a href="img2018/c/'
+	var linea01a = '<hr> <div class = "row">'+'<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><div class = "row"><div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><a href="img2018/c/'
 	var linea02a = '"><img src="img2018/c/'  //width="100%"
-	var linea03a ='" width= "100%" class= "imag"></a></div><div class="col-sm-3 col-md-3 col-xl-3 mb-3"><a href="img2018/a/'
+	var linea03a ='" width ="100%" align="center" class= "imag"></a></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="img2018/a/'
 	var linea04a = '"><img src="img2018/a/'
-	var linea05a = '" width= "100%"   class= "imag"/></a><br><br><a href="img2018/p/'
+	var linea05a = '" width ="150vmax" align="center" class= "padbt imag"/></a><a href="img2018/p/'
 	var linea06a = '"><img src="img2018/p/'
-	var linea07a = '" width= "100%"   class= "imag"/></a></div></div><div class = "row"><h5></h5></div></div>'+'<div class="col-sm-6 col-md-6 col-xl-6 mb-6"><img src="img2018/paisaje/' 
-	var linea08a = '"  class="cover"><span class= "cop">&copy;ENRIQUE RIVERA</span></div></div>'
+	var linea07a = '" width ="150vmax" align="center" class= "padbt imag"/></a></div></div></div>'+'<div class="col-sm-12 col-md-6 col-xl-6 mb-6"><img src="img2018/paisaje/' 
+	var linea08a = '" width ="100%"  align="center" class="cover padup "><span class= "cop">&copy;ENRIQUE RIVERA</span></div></div>'
 
+
+
+
+	/*
 	var linea01 = '<hr> <div class = "row"><div class="col-sm-6 col-md-6 col-xl-6 mb-6"><img src="img2018/paisaje/' 
 	var linea02 = '"  class="cover"><span class= "cop">&copy;ENRIQUE RIVERA</span></div><div class="col-sm-6 col-md-6 col-xl-6 mb-6"><div class = "row"><div class="col-sm-9 col-md-9 col-xl-9 mb-9"><a href="img2018/c/'
 	var linea03 = '"><img src="img2018/c/'  //width="100%"
@@ -156,16 +191,18 @@ function generaECAP(){
 	var linea06 = '" width= "100%"   class= "imag"/></a><br><br><a href="img2018/p/'
 	var linea07 = '"><img src="img2018/p/'
 	var linea08 = '" width= "100%"   class= "imag"/></a></div></div><div class = "row"><h5></h5></div></div></div>'
-
+    */
 	var lineas ="<br>"
 
 
 	for (var rr = 0; rr < 28; rr ++){
 		var consec= rr +1
+		var lineahead= '<hr> <div class= "row">  <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 "> <table><tr><td><img src="img2018/icono.png" height="35px"></td><td>░▒▓█</td> <td> <p class = "pcent"> <b> &nbsp MODELO: ' + consec +' </b></p> </td></tr></table>'+'</div>  <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 videoinv"> <p class = "pcent"> Conjunto :  $ ' + precio[rr] +'</div>  </div>'
 		if(isEven(rr)){
-			lineas = lineas + "<hr><p>"+consec+"</p>"+linea01a +  collares[rr] +linea02a + collares[rr] + linea03a + aretes[rr] + linea04a + aretes[rr] +linea05a + pulseras[rr] + linea06a + pulseras[rr] + linea07a + paisajes[rr] + linea08a	
+			lineas = lineas +lineahead+linea01a +  collares[rr] +linea02a + collares[rr] + linea03a + aretes[rr] + linea04a + aretes[rr] +linea05a + pulseras[rr] + linea06a + pulseras[rr] + linea07a + paisajes[rr] + linea08a	 + "<br><hr>"
 		}else{
-			lineas = lineas + "<hr><p>"+consec+"</p>"+linea01 +  paisajes[rr] +linea02 + collares[rr] + linea03 + collares[rr] + linea04 + aretes[rr] +linea05 + aretes[rr] + linea06 + pulseras[rr] + linea07 + pulseras[rr] + linea08	
+			lineas = lineas +lineahead+linea01a +  collares[rr] +linea02a + collares[rr] + linea03a + aretes[rr] + linea04a + aretes[rr] +linea05a + pulseras[rr] + linea06a + pulseras[rr] + linea07a + paisajes[rr] + linea08a	+ "<br><hr>"
+			// lineas = lineas + "<hr><p>"+consec+"</p>"+linea01 +  paisajes[rr] +linea02 + collares[rr] + linea03 + collares[rr] + linea04 + aretes[rr] +linea05 + aretes[rr] + linea06 + pulseras[rr] + linea07 + pulseras[rr] + linea08	
 		};
 
 	};
