@@ -34,7 +34,7 @@ var aretes = [
 "TX028As88_89.jpg"];
 
 var collares = [
-"TX011Cs34_89.jpg",
+"blanco.jpg",   //"TX011Cs34_89.jpg",  collar 1 eliminado
 "TX001Cs02_89.jpg",
 "TX002Cs06_89.jpg",
 "TX003Cs10_89.jpg",
