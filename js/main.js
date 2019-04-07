@@ -34,7 +34,7 @@ var aretes = [
 "TX028As88_89.jpg"];
 
 var collares = [
-"blanco.jpg",   //"TX011Cs34_89.jpg",  collar 1 eliminado
+"TX011Cs34_89.jpg",  
 "TX001Cs02_89.jpg",
 "TX002Cs06_89.jpg",
 "TX003Cs10_89.jpg",
@@ -194,9 +194,10 @@ function generaECAP(){
     */
 	var lineas ="<br>"
 
-
-	for (var rr = 0; rr < 28; rr ++){
-		var consec= rr +1
+        /// decina rr=0   de esta forma salta el primer modelo
+	for (var rr = 1; rr < 28; rr ++){  
+		       /// decina rr+1   de esta forma se reordena el consecutivo de modelos
+		var consec= rr 
 		var lineahead= '<hr> <div class= "row">  <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 "> <table><tr><td><img src="img2018/icono.png" height="35px"></td><td>░▒▓█</td> <td> <p class = "pcent"> <b> &nbsp MODELO: ' + consec +' </b></p> </td></tr></table>'+'</div>  <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 videoinv"> <p class = "pcent"> Conjunto :  $ ' + precio[rr] +'</div>  </div>'
 		if(isEven(rr)){
 			lineas = lineas +lineahead+linea01a +  collares[rr] +linea02a + collares[rr] + linea03a + aretes[rr] + linea04a + aretes[rr] +linea05a + pulseras[rr] + linea06a + pulseras[rr] + linea07a + paisajes[rr] + linea08a	 + "<br><hr>"
