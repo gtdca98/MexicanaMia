@@ -13,7 +13,7 @@ var lits= [
 function generaECAP(){
 
 	var L01 ='<div class = "row">'
-	var L02 ='<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mar15" >' + '<img src="Col_FyF/paisaje/'
+	var L02 ='<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mar15" >' + '<img src="Col_FyF/Paisaje/'
 	var L03 ='" width ="100%"  align="center" class="cover" >' + '<span class= "cop">&copy;<i>Fotografía: </i> ENRIQUE RIVERA</span>' + '<a href="Col_FyF/a/' 
 	var L03b='" ><img src="Col_FyF/a/'
 	var L04 ='" width ="20%" class="a_css "> </a>' + '<a href="Col_FyF/c/' 
