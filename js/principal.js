@@ -29,7 +29,7 @@ function generaECAP(){
 	for (var rr = 0; rr < lits.length   ; rr ++){  
 		       /// decina rr+1   de esta forma se reordena el consecutivo de modelos
 		var consec= rr 
-		var lineahead= '<hr><br><br> <h5 class = "mar15">Mexicana Mía</h5><div class= "row">  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mar15"> <table><tr><td><img src="Col_FyF/icono.png" height="35px"></td><td>░▒▓█</td> <td> <p class = "pcent"> <b> &nbsp : ' + lits[rr][1] +' </b></p> </td> <td><img class= "etiqueta" src="Col_FyF/Mexicana Etiquetas.jpg" height="40px" ></td></tr></table>'+'</div>    </div>'
+		var lineahead= '<hr><br><br> <div class= "row">  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 mar15"><h5>Mexicana Mía</h5></div> <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 "><img class="etiqueta" src="Col_FyF/Mexicana Etiquetas.jpg" height="40px"></div></div><div class= "row">  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mar15"> <table><tr><td><img src="Col_FyF/icono.png" height="35px"></td><td>░▒▓█</td> <td> <p class = "pcent"> <b> &nbsp : ' + lits[rr][1] +' </b></p> </td> </tr></table>'+'</div>    </div>'
 		var lineatail= '<p style="position: absolute; top: 101%; left: 25%; color: transparent;"><b>Conjunto $' + (parseInt(lits[rr][9]) + parseInt(lits[rr][3]) +parseInt(lits[rr][6])- parseInt('120'))   + '</b><br>Collar $' + lits[rr][9] + '<br>Arete $'+ lits[rr][3]  + '<br>Pulsera$'+lits[rr][6]  +'</p>' 
 		lineas = lineas +lineahead+L01+L02 + lits[rr][0]+ L03 + lits[rr][2] + L03b+ lits[rr][2] + L04 + lits[rr][8] +L04b + lits[rr][8]+L05 + lits[rr][5]+L05b + lits[rr][5]+L06 + lineatail +L07+"<br><br><br><br><br><br><br><br<br><br><hr class='st13'>"
 		
