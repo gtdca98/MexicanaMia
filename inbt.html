@@ -1,8 +1,10 @@
  <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+
   <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  	<link href="https://fonts.googleapis.com/css?family=Rajdhani|Oswald|Roboto+Slab" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +17,19 @@
 
 
 <style type="text/css">
+	#cabezado img{
+		width: auto;
+		height: 50vw;
+		
+	}
+
+	.cabeza{
+		height: 40vmax;
+		padding: 0px !important:
+		margin: 0px !important;
+	}
+
+
 	.a_css{
 		position: absolute; 
 		top: 10%; 
@@ -104,18 +119,233 @@
 		transform:  rotate(270deg);
 	}
 
+
+
 }
+
+.floatover{
+  position: absolute;
+  bottom: -25%;
+  right: 0%;
+}
+
+
+
+
+.content {
+ font-family: 'Rajdhani', sans-serif;
+
+ text-align: center;
+ position: absolute;
+ bottom:  -25%;
+ right: 55%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 50%;
+  padding: 20px;
+}
+ .colname{
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ 	font-size: 2.9em;
+ 	color: #880000;
+ 	font-family: 'Rajdhani', sans-serif;
+     text-align: center;
+
+ }
+
+.transp{
+	background-color: transparent;
+	padding: 40px 80px;
+}
+.divcon{
+	position: relative;
+}
+
+.txtcon{
+	position: absolute;
+	left: 60px;
+	top: 12px;
+}
+
+.facebook:hover , .twitter:hover , .google:hover , .whatsapp:hover, .instagram:hover , .youtube:hover {
+  font-size: 1.3em;	
+ 
+}
+
+		#cf1,#cf2 {
+		  position:relative;
+		  /*height:266px;
+		  width:100%;*/
+		  margin:0 ;
+		  padding: 0pt;
+		  /*height: 22vw;
+		  width: 22vw;*/
+		}
+
+
+
+
+
+		#cf1 img,#cf2 img{
+
+		  -webkit-transition: opacity 4s ease-in-out;
+		  -moz-transition: opacity 4s ease-in-out;
+		  -o-transition: opacity 4s ease-in-out;
+		  transition: opacity 4s ease-in-out;
+		}
+		#cf2 img{
+		  position:absolute;
+		  left:0;
+		}
+		.cellSize {
+			padding: 0pt;
+			margin: 0pt !important;
+		}
+
+		#cf1 img.top{
+		animation-name: cf1FadeInOut;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate;
+		}
+
+
+		#cf2 img.top {
+		animation-name: cf2FadeInOut;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-duration: 8s;
+		animation-direction: alternate;
+		}
+
+		@keyframes cf1FadeInOut {
+			100% {opacity:0;}
+			55% {opacity:1;}
+			45% {opacity:0;}
+			0% {opacity:1;}
+		}
+
+		@keyframes cf2FadeInOut {
+			0% {opacity:1;}
+			45% {opacity:0;}
+			55% {opacity:0;}
+			100% {opacity:1;}
+		}
+
+		.imgSize{
+		object-fit: cover;
+		object-position: 100% 50;
+		height: 100%;
+		width: inherit;	
+		}
+
 
 </style>
 
 
 <body>
 
-		 
+<div style="position: relative; ">
+<img id="logCar" class= "floatover" src="Col_FyF/logo.png" width = "10%">
+
+<div class = "content">
+	
+	<h6>JOYERIA INSPIRADA EN  &nbsp <br> Bellezas Mexicanas</h6>
+    
+</div>
+
+
+
+<div id="cabezado">
+	<table>
+		<tr>
+			<td class= "cellSize">
+				<div  class= "cabeza" >
+					<img src="Col_FyF/Paisaje/flor blanca del desierto.JPG" height="inherit" >
+					<!--
+					<img id="i1a" src="Col_FyF/Paisaje/mix_01.jpg" height="inherit" class="topi imgSize">
+	                <img id="i1b" src="Col_FyF/Paisaje/flor blanca del desierto.JPG" height="inherit" class="top imgSize">
+	            -->
+				</div>
+			</td>
+			
+			<td >
+				<div >
+	               
+	               <p class="colname"><b>C</b>olección <br>  <b>F</b>lores y <br>  <b>F</b>achadas</p>	
+				</div>
+			</td>
+
+			<td class= "cellSize">
+				<div id="cf2" class= "cabeza " >
+	                
+	                <img id="i2a" src="Col_FyF/Paisaje/F naranja y cafe.JPG" height="inherit" class="bottom imgSize">
+	                <img  id="i2b" src="Col_FyF/Paisaje/mix_02.jpg" height="inherit" class="top imgSize">
+				</div>
+			</td>
+
+		</tr>
+	</table>
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="margin: 10%; ">
+	<p style="font-family: 'Oswald', sans-serif; font-size: 2.7em;">Ven y vístete con los colores de MÉXICO ... </p>
+	<p style="font-family: 'Roboto+Slab', sans-serif; font-size: 1.7em;">4 y 5 de mayo te esperamos en <a href="https://www.facebook.com/BazarEmpoderarteMx/"> <b>Bazar Empoderarte MX </b></a> </p>
+	<span  style="font-family: 'Rajdhani', sans-serif; font-size: 1.2em;"><b>¡Entrada libre!</b></span>
+	<p>📍 Plaza La Reyna, Av. Revolución 1734, San Ángel, CDMX
+🚋 A 5 minutos de los metros Barranca del Muerto, Viveros y Miguel Ángel de Quevedo.
+🚶‍♀️ A dos cuadras del Metrobús La Bombilla y Dr. Gálvez"... No faltes!! <a href="Col_FyF/Mapa.png">Mapa</a></p>
+</div>
+
+
+<br>
+<br>
 
 <div id="contenido">
 	
 </div>
+
+
+<footer>
+  <div class= "transp">
+    <p>Contáctanos:</p>
+	<div class="divcon">
+		  <a href="https://www.facebook.com/MexicaMia/" class="facebook"><i class="fa fa-facebook fa-2x"></i> </a> 
+		  <p class = "txtcon" >https://www.facebook.com/MexicaMia/</p>
+	</div>
+	<div  class="divcon">
+		  <a href="mailto:mexicamia@gmail.com" class="google"><i class="fa fa-google fa-2x"></i></a> 
+		  <p class = "txtcon">mexicamia@gmail.com</p>
+    </div>
+    <div  class="divcon">
+		  <a href="" class="whatsapp"><i class="fa fa-whatsapp fa-2x"></i></a>
+		  <p class = "txtcon">5517585191</p>		
+	</div>  	
+
+    <div  class="divcon">
+		  <a href="https://www.instagram.com/mexicanamiamx/" class="instagram"><i class="fa fa-instagram fa-2x"></i></a>
+		  <p class = "txtcon">https://www.instagram.com/mexicanamiamx/</p>		
+	</div>  	
+    <hr>	 
+    <p>Mexicana Mía es una iniciativa creativa que se caracteriza por ofrecer piezas artesanales de joyería individualizada. <br> Cada pieza fue diseñada y creada por artesanos mexicanos.</p>
+    <p>Créditos: <br>Fotografia en <b>Colección Flores y Fachadas MM</b>  &copy;ENRIQUE RIVERA. <br>Diseño de joyeria: Mexicana Mía</p>
+    
+    © 2019, Mexicana Mía
+    <p>Pagina: Versión: 21 abril 2019</p>
+  </div>
+</footer>
+
 
 
 
