@@ -1,11 +1,11 @@
 
 var lits= [ 
-["flor blanca de cactus.jpg" ,"Colección flores y fachadas","A.flor blanca de cactus.jpg",123,"SI","P flor blanca de cactus.jpg",187,"SI","C.flor blanca de cactus.jpg",366,"SI",316],
-["F.rosa y menta.JPG"        ,"Colección flores y fachadas","none.jpg"                      ,128,"NO","P.F rosa y menta.jpg"       ,197,"SI","C.F.rosa y menta.jpg"       ,384,"SI",334],
-["F.verde agua.JPG"          ,"Colección flores y fachadas","A.F.verde agua.jpg"		 ,133,"SI","P.F.verde agua.jpg"         ,207,"SI","C.F.verde agua.jpg"         ,402,"SI",352],
-["flor mirasol naranja.jpg"  ,"Colección flores y fachadas","A.flor mirasol naranja.jpg" ,138,"SI","P.flor mirasol naranja.jpg" ,217,"SI","C.flor mirasol naranja.jpg" ,420,"SI",370],
-["flor violetas.JPG"         ,"Colección flores y fachadas","A.flor violetas.jpg"        ,143,"SI","P.flor violetas.jpg"        ,227,"SI","C.flor violetas.jpg"        ,438,"SI",388],
-["pompom rosa.jpg"			 ,"Colección flores y fachadas","A.pompon rosa.jpg"          ,148,"SI","P.pompon rosa.jpg"          ,237,"SI","C.pompon rosa.jpg"          ,456,"SI",406]
+["flor blanca de cactus.jpg" ,"Colección Flores y Fachadas","A.flor blanca de cactus.jpg",125,"SI","P flor blanca de cactus.jpg",140,"SI","C.flor blanca de cactus.jpg",240,"SI",505],
+["F.rosa y menta.JPG"        ,"Colección Flores y Fachadas","none.jpg"                      , 0,"NO","P.F rosa y menta.jpg"       ,160,"SI","C.F.rosa y menta.jpg"       ,260,"SI",420],
+["F.verde agua.JPG"          ,"Colección Flores y Fachadas","A.F.verde agua.jpg"		 ,100,"SI","P.F.verde agua.jpg"         ,130,"SI","C.F.verde agua.jpg"         ,230,"SI",460],
+["flor mirasol naranja.jpg"  ,"Colección Flores y Fachadas","A.flor mirasol naranja.jpg" ,125,"SI","P.flor mirasol naranja.jpg" ,130,"SI","C.flor mirasol naranja.jpg" ,240,"SI",495],
+["flor violetas.JPG"         ,"Colección Flores y Fachadas","A.flor violetas.jpg"        ,115,"SI","P.flor violetas.jpg"        ,140,"SI","C.flor violetas.jpg"        ,310,"SI",565],
+["pompom rosa.jpg"			 ,"Colección Flores y Fachadas","A.pompon rosa.jpg"          ,260,"SI","P.pompon rosa.jpg"          ,135,"SI","C.pompon rosa.jpg"          ,265,"SI",660]
 ]
 
 
@@ -36,7 +36,7 @@ function generaECAP(){
 			var lineahead= '<hr><br><br> <div class= "row">  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mar15">  <p class="title" >Mexicana Mía</p></div> </div><div class= "row">  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mar15"> <table><tr><td><img src="Col_FyF/Mexicana Etiquetas.png" height="35px"></td> <td> <p class = "pcent"> <b> &nbsp ' + lits[rr][1] +' </b></p> </td> </tr></table>'+'</div>    </div>'
 			
 		}
-		var lineatail= '<p style="position: absolute; top: 101%; left: 25%; color: transparent;"><b>Conjunto $' + (parseInt(lits[rr][9]) + parseInt(lits[rr][3]) +parseInt(lits[rr][6])- parseInt('120'))   + '</b><br>Collar $' + lits[rr][9] + '<br>Arete $'+ lits[rr][3]  + '<br>Pulsera$'+lits[rr][6]  +'</p>' 
+		var lineatail= '<p style="position: absolute; top: 101%; left: 25%; "><b>Conjunto $' + (parseInt(lits[rr][9]) + parseInt(lits[rr][3]) +parseInt(lits[rr][6])- parseInt('0'))   + '</b><br>Collar $' + lits[rr][9] + '<br>Arete $'+ lits[rr][3]  + '<br>Pulsera$'+lits[rr][6]  +'</p>' 
 		lineas = lineas +lineahead+L01+L02 + lits[rr][0]+ L03 + lits[rr][2] + L03b+ lits[rr][2] + L04 + lits[rr][8] +L04b + lits[rr][8]+L05 + lits[rr][5]+L05b + lits[rr][5]+L06 + lineatail +L07+"<br><br><br><br><br><br><br><br<br><br><hr class='st13'>"
 		
 	};
