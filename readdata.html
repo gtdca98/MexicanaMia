@@ -12,7 +12,51 @@
     3. For additional information on authentication, see
        https://developers.google.com/sheets/api/quickstart/js#step_2_set_up_the_sample
     -->
+    
+
     <script>
+
+      function generateTable(data) {
+          var html = '';
+
+          if (typeof (data[0]) === 'undefined') {
+              return null;
+          }
+
+          if (data[0].constructor === String) {
+              html += '<tr>\r\n';
+              for (var item in data) {
+                  html += '<td>' + data[item] + '</td>\r\n';
+              }
+              html += '</tr>\r\n';
+          }
+
+          if (data[0].constructor === Array) {
+              for (var row in data) {
+                  html += '<tr>\r\n';
+                  for (var item in data[row]) {
+                      html += '<td>' + data[row][item] + '</td>\r\n';
+                  }
+                  html += '</tr>\r\n';
+              }
+          }
+
+          if (data[0].constructor === Object) {
+              for (var row in data) {
+                  html += '<tr>\r\n';
+                  for (var item in data[row]) {
+                      html += '<td>' + item + ':' + data[row][item] + '</td>\r\n';
+                  }
+                  html += '</tr>\r\n';
+              }
+          }
+
+          return html;
+      }
+
+
+
+
     function makeApiCall() {
       var params = {
         // The ID of the spreadsheet to retrieve data from.
@@ -36,6 +80,8 @@
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
         console.log(response.result);
+        generateTable(response.result);
+        $('#tablaout').append();
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
       });
@@ -89,5 +135,6 @@
     </script>
     <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
     <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
+    <div id= "tablaout"></div>
   </body>
 </html>
