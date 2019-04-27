@@ -51,7 +51,7 @@
               }
           }
 
-          return "<table>" + html "</table>";
+          return html;
       }
 
 
@@ -84,7 +84,7 @@
         var mintbl= generateTable(respu);
         
         console.log(mintbl);
-        $('#tablaout').append(mintbl);
+        $('#tablaout').append("<table>" + mintbl + "</table>");
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
       });
