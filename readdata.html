@@ -15,7 +15,7 @@
     
 
     <script>
-
+     var respu= []
       function generateTable(data) {
           var html = '';
 
@@ -81,6 +81,7 @@
         // TODO: Change code below to process the `response` object:
         console.log(response.result);
         var mintbl= generateTable(response.result);
+        respu=response.result;
         console.log(mintbl);
         $('#tablaout').append(mintbl);
       }, function(reason) {
