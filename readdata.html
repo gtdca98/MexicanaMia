@@ -81,8 +81,7 @@
         // TODO: Change code below to process the `response` object:
         console.log(response.result);
         respu=response.result;
-        var mintbl= generateTable(respu);
-        
+        var mintbl= generateTable(respu.values);
         console.log(mintbl);
         $('#tablaout').append("<table>" + mintbl + "</table>");
       }, function(reason) {
