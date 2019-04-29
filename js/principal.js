@@ -15,9 +15,9 @@ var lits= [
 ["F.negra gala.PNG"           ,"Colección Flores y Fachadas","A.negra gala.jpg"           ,  0,"SI","P.negra gala.jpg"           ,  0,"SI","C. negra gala.jpg"          ,  0,"SI",  0],
 ["F.rosa cactasea.JPG"        ,"Colección Flores y Fachadas","A.rosa cactasea.jpg"        ,  0,"SI","P.rosa cactasea.jpg"        ,  0,"SI","C.rosa cactasea.jpg"        ,  0,"SI",  0],
 ["F.verde liston.JPG"         ,"Colección Flores y Fachadas","none.jpg"                   ,  0,"NO","P.verde liston.jpg"         ,  0,"SI","C.verde liston.jpg"         ,  0,"SI",  0],
-["F.verde ojo de tigre.jpg"   ,"Colección Flores y Fachadas","A.verde ojo de tigre.jpg"   ,  0,"SI","P.verde ojo de tigre.jpg"   ,  0,"SI","C.verde ojo de tigre.jpg"   ,  0,"SI",  0],
-["Fachada azul.JPG"           ,"Colección Flores y Fachadas","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO",  0],
-["F.Rosa.agua.JPG"            ,"Colección Flores y Fachadas","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO",  0]
+["F.verde ojo de tigre.jpg"   ,"Colección Flores y Fachadas","A.verde ojo de tigre.jpg"   ,  0,"SI","P.verde ojo de tigre.jpg"   ,  0,"SI","C.verde ojo de tigre.jpg"   ,  0,"SI",  0]
+//["Fachada azul.JPG"           ,"Colección Flores y Fachadas","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO",  0],
+//["F.Rosa.agua.JPG"            ,"Colección Flores y Fachadas","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO","none.jpg"                   ,  0,"NO",  0]
 
 ]
 
