@@ -36,7 +36,7 @@ for (var rr = 0; rr < pProd.length   ; rr ++){
 
 //proceso de taloneras
 var tProd = [
-["Talonera atrapasueños.jpg"    ,   0],
+["Talonera atrapasuenos.jpg"    ,   0],
 ["Talonera caracol.jpg"         ,   0],
 ["Talonera cola de ballena.jpg" ,   0],
 ["Talonera cuadro azul.jpg"     ,   0],
